@@ -1,0 +1,549 @@
+/*==========CSS RESET START==========*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==========CSS RESET END==========*/
+
+/*==========MAIN START==========*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+a,span,*::before,*::after{
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    text-transform: inherit;
+}
+.door_content_backgroud{
+    padding: 70px 0;
+    background-color: var(--Grey-on-white-background);
+}
+.container{
+    width: 100% !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+}
+:root{
+    --black: #181818;
+    --Accent-Yellow:#F0E819;
+    --green: #00AC49;
+    --white: #fff;
+    --Grey-on-white:#B4B4BE;
+    --Grey-on-white-background:rgb(180, 180, 190, 0.14);
+    --Grey-on-white-border:rgb(180, 180, 190, 0.20);
+    --Text-Yellow: #E1D90D;
+    --blue: #2D9CDB;
+    --Grey-on-black:#85858C;
+    --Grey-on-white-for-span:#d7d7d7;
+    --Grey-block-deco: #D1D1DB;
+}
+/*==========HEADER START==========*/
+.header{
+    background-color: var(--black);
+    color: var(--Grey-on-black);
+    padding: 20px 0;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+.header-top-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+     margin-right: 55px;;
+}
+.header-top-logo ul li{
+    position: relative;
+    margin-bottom: 5px;
+}
+.header-top-logo ul li:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--Accent-Yellow);
+}
+.info_header-top-login{
+    display: flex;
+    align-items: center;
+}
+.info_header-top-login p{
+    border-bottom: 1px dashed;
+}
+.login{
+    padding: 10px 35px;
+    border: 1px solid transparent;
+    background-color: var(--Accent-Yellow);
+    color: var(--black);
+    font-weight: 600;
+    margin-left: 50px;
+    border-radius: 2px;
+    transition: .3s;
+}
+.login:hover{
+    background-color: var(--black);
+    color: var(--Accent-Yellow);
+    border: 1px dashed var(--Accent-Yellow);
+}
+
+/*==========HEADER END==========*/
+
+/*==========NAV START==========*/
+.nav{
+    position: relative;
+    margin-bottom: 95px;
+}
+.nav:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--Grey-on-white);
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul li{
+    position: relative;
+}
+.nav ul li  a{
+    font-weight: 600;
+    padding: 18px 0;
+}
+.nav ul li::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background-color: var(--black);
+    transform: translateX(-50%);
+    transition: .3s ease-in-out;
+}
+.nav ul li:hover::before{
+    width: 50%;
+}
+/*==========NAV END==========*/
+
+/*==========HERO START==========*/
+.hero{
+    margin-bottom: 220px;
+}
+.hero_name{
+    margin-bottom: 75px;
+}
+.hero_title{
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.hero_title span{
+    color: var(--Grey-on-white);
+}
+.subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.hero_subtitle{
+    width: 441px;
+}
+.hero_subtitle span{
+    font-weight: 600;
+}
+.hero_cost h3{
+    font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.hero_cost h2{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    position: relative;
+    margin-bottom: 35px;
+}
+.hero_cost h2::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 300px;
+    height: 20px;
+    background-color: var(--Accent-Yellow);
+    transform: skewX(-45deg);
+    z-index: -1;
+}
+.product_size{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.product_size p:first-child{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    position: relative;
+    margin-right: 15px;
+}
+.product_size p:last-child{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--Grey-on-white);
+    width: 177px;
+}
+
+.product_size_border{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.hero_presentation{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.hero_presentation h2{
+    margin-bottom: 25px;
+}
+
+.hero_illustration{
+    display: flex;
+    align-items: end;
+}
+.hero_illustration_img1{
+    margin-right: 30px;
+}
+.hero_about_doors{
+    display: flex;
+    justify-content: space-between;
+}
+.hero_about_doors_info{
+    position: relative;
+}
+
+.hero_about_doors_info:not(:last-child){
+    margin-right: 45px;
+}
+.hero_about_doors_info p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+}
+.hero_decoration{
+    position: absolute;
+    top: -20px;
+    left: -25px;
+}
+/*==========HERO END==========*/
+/*==========INFORMATION ON PROMO CUBE START==========*/
+.Info_on_cube{
+    margin-bottom: 45px;
+}
+.section_title{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+    margin-right: 50px;
+}
+.section_title h2{
+    margin-left: 20px;
+}
+.info_door_illustration{
+    margin-right: 0px;
+}
+.info_on_doors_block{
+    position: relative;
+}
+.info_on_doors_block::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 25px;
+    clip-path: polygon(0 51%, 100% 100%, 100% 0);
+    background-color: var(--black);
+    transform: translateX(-100%);
+}
+.info_doors_swiper{
+    background-color: var(--black);
+    padding: 45px;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.info_doors_swiper img{
+    margin-right: 60px;
+}
+.info_on_doors_list .article_title{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.article_title{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 29px;  
+}
+.info_on_doors_list ul{
+    list-style: decimal;
+}
+.info_on_doors_list ul li{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: var(--Grey-on-black);
+}
+.info_doors_price{
+    width: 440px;
+    position: relative;
+    margin-left: 45px;
+}
+.info_doors_price p{
+    color: var(--Grey-on-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.info_doors_price::before{
+    content: "*";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 25px;
+    color: var(--Grey-on-white);
+    font-weight: 500;
+}
+/*==========INFORMATION ON PROMO CUBE END==========*/
+
+/*==========TYPES OF DOORS START==========*/
+.door_types{
+    margin-bottom: 150px;
+}
+.door_types_deco{
+    background: url(../img/door_types_deco.svg);
+    width: 326.48px;
+    height: 247.88px;
+    margin-bottom: 70px;
+}
+.door_types_text_article_1 span{
+    background-color: var(--Grey-on-white-for-span);
+}
+.door_types_text p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    width: 344px;
+}
+.door_types_text p span{
+    font-weight: 600;
+}
+.door_types_text svg{
+    margin: 20px 0;
+}
+.door_type_illustration_doors{
+    display: flex;
+    justify-content: center;
+}
+/*==========TYPES OF DOORS END==========*/
+
+
+/*==========MATERIAL OF DOORS START==========*/
+.door_material{
+    margin-bottom: 130px;
+}
+.door_material_type{
+    padding: 35px;
+    border: 2px solid var(--Grey-on-white-border);
+    display: flex;
+    align-items: center;
+}
+.door_material_type:first-child{
+    margin-bottom: 20px;
+}
+.door_material_type svg{
+    margin-right: 25px;
+}
+.door_material_type .article_title{
+    margin-bottom: 10px;
+}
+.door_material_type p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+/*==========MATERIAL OF DOORS END==========*/
+
+/*==========COLORS OF DOORS START==========*/
+.door_colors{
+    margin-bottom: 130px;
+}
+.article_title_margin_bottom{
+    margin-bottom: 40px;
+}
+.door_type_info .col-6{
+    padding: 0;
+}
+.door_colors_block{
+    width: 174px;
+    margin-bottom: 30px;
+    background-color: var(--white);
+    transition: .3s ease-out;
+    position: relative;
+    clip-path: polygon(100% 0, 100% 90%, 91% 100%, 0 100%, 0 0);
+    transform: perspective(1px) translateZ(0);
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.door_color_type img{
+    width: 100%;
+}
+.door_colors_block::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: var(--Grey-block-deco);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    transform: translate(0, 0);
+    transition: .3s ease-out;
+}
+
+.door_color_name{
+    padding: 16px 12px;
+}
+.door_color_name p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+/*==========COLORS OF DOORS END==========*/
+/*==========PROFITS START==========*/
+.profits{
+    margin-bottom: 150px;
+}
+.profits .section_title{
+    flex-direction: column;
+    
+}
+.profits .section_title span{
+    font-weight: 700;
+}
+.profits .section_title h2{
+    margin-bottom: 15px;
+}
+.profits_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profits_list ul li{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.profits_list ul li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--Accent-Yellow);
+    transform: translate(-200%, 0%);
+}   
+.profits_list ul li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.profits_list span{
+    font-weight: 700;
+}
+.profits_illustration{
+    justify-content: center;
+    display: flex;
+}
+
+/*==========PROFITS END==========*/
