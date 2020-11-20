@@ -547,3 +547,27 @@ margin-bottom: 20px;
 }
 
 /*==========PROFITS END==========*/
+
+
+
+/*==========COOP START==========*/
+.benefits{
+    display: flex;
+    justify-content: space-between;
+}
+.benefits_block{
+    background-color: var(--black);
+    padding: 25px;
+}
+.benefits_block p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--white);
+    width: 310px;
+}
+.benefits_block svg{
+    margin-bottom: 20px;
+}
+/*==========COOP END==========*/
