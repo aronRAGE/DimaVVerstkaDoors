@@ -554,6 +554,7 @@ margin-bottom: 20px;
 .benefits{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .benefits_block{
     background-color: var(--black);
@@ -569,5 +570,19 @@ margin-bottom: 20px;
 }
 .benefits_block svg{
     margin-bottom: 20px;
+}
+.coop_rules{
+    background-color: var(--white);
+    padding: 45px;
+}
+.coop_rules .article_title{
+    margin-bottom: 25px;
+}
+.coop_rules_info p{
+    margin-bottom: 30px;
+    width: 1060px;
+}
+b{
+    font-weight: 600;
 }
 /*==========COOP END==========*/
