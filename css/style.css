@@ -650,3 +650,50 @@ b{
     width: 650px;
 }
 /*==========COOP END==========*/
+
+/*==========REQUEST START==========*/
+.request{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 60px 0;
+    position: relative;
+}
+.request_svg{
+    width: 8%;
+    align-self: baseline;
+    margin-top: 3%;
+}
+.request_text span{
+    color: var(--Text-Yellow);
+    font-weight: 700;
+
+}
+.request_leftside img{
+    position: absolute;
+}
+.request_form{
+    background-color: var(--white);
+    padding: 20px 40px;
+}
+.form_inputs{
+    color: var(--black);
+    margin-bottom: 30px;
+}
+.form_inputs:last-child{
+    margin-bottom: 45px; 
+}
+.form_input p{
+    font-size: 15px;
+    color: var(--Grey-block-deco);
+    line-height: 44px;
+}
+.form_input{
+    border: 0;
+    border-bottom: 1px solid var(--Grey-block-deco);
+    width: 100%;
+    padding-bottom: 5px;
+    line-height: 44px;
+    font-size: 18px;
+}
+
+/*==========REQUEST END==========*/
